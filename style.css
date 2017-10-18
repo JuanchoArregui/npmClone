@@ -1,0 +1,231 @@
+/* Hoja de estilo del ejercicio NPM Clone */
+/* by Juancho */
+
+/* importamos la letra roboto de Google con este procedimiento simplificado que de momento nos da ironhack */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+
+/* esto se aplica a todo el cuerpo de la página, es decir a todo lo que se ve */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Open-Sans, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(255,255,255,0.8);
+}
+
+
+
+
+/*-- estilos generales */
+.clearfloat {
+  clear: both;
+  background-color: pink;
+}
+.container-centrado {
+  width: 80%;
+  margin: 0 auto;
+}
+.container-photo {
+  width: 50%;
+  min-width: 500px;
+  display: inline-block;
+  margin: auto 0;  /*-- HElP!!!!!!!!!!!!!
+  : ¿¿¿¿¿¿ pq no funciona y no se centra verticalmente?????? */
+  float: left;
+}
+.container-text {
+  float: left;
+  width: 40%;
+  min-width: 400px;
+  padding: 20px 0 0 40px;
+}
+
+.button{
+  text-align: center;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px;
+  width: 200px;
+  margin: 20px 0;
+}
+a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+.link-underlined {
+  font-weight: bold;
+}
+.link-underlined:hover{
+  text-decoration: underline;
+}
+
+
+
+/*-- TOP NAVIGATION BAR */
+nav {
+  background-color: #C12127;
+  min-height: 20px;
+  padding: 15px 0;
+}
+.top-left{
+  float: left;
+  margin-left: 20px;
+}
+.acronym {
+  margin: 0 15px;
+}
+nav ul {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+/*-- INTRO HEADER */
+header{
+  background: rgb(32, 101, 136);
+  font-size: 18px;
+  font-weight: 500;
+  height: 500px;
+  background-image: url(https://www.npmjs.com/static/images/hero-cityscape.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header-container {
+  width: 100%;
+}
+.header-left{
+  float: left;
+  margin: 20px;
+  height: 50px;
+  width: 8%;
+  min-width: 128px;
+}
+.header-left img{
+  height: 50px;
+}
+.header-middle{
+  float: left;
+  margin-top: 20px;
+  /* HElP!!!!!!!!!!!!!
+  me he vuelto loco con esto y no consigo que el campo de busqueda se expanda con lña pantalla y vaya desde el icono hasta la lupa */
+
+}
+.header-middle form{
+display: inline;
+  width: 100%;
+}
+.header-middle input{
+  padding: 0 60% 0 20px;
+  background: rgb(32, 82, 111);
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  height: 48px;   /* HElP!!!!!!!!!!!!!
+  ¿¿¿¿pq si le doy width 100% ocupa todo el ancho de pantalla y no el 100% de su contenedor padre???????  */
+}
+
+/* HElP!!!!!!!!!!!!! con esta parte del header me he vuelto loco. no he encontrado una manera de introducir el ancho de la barra de búsqueda para que se ajuste de forma variable. El logo de la izq tiene ancho fijo. Y la parte de la derecha también, así que la fórmula para calcular el ancho sería: "ancho-campo-busqueda= 100% - anchologo - Lupaypartederecha" ¿¿¿¿¿Existe alguna jodida manera de hacer esto??????????????????*/
+
+.header-right {
+  float: right;
+  text-align: right;
+  margin-top: 20px;
+  width: 300px;
+  height: 50px;
+}
+.search-button{  /* HElP!!!!!!!!!!!!!
+  el boton de la lupa está 1 pixel desplazado hacia abajo y no se pq */
+  text-align: middle;
+  background: rgb(32, 82, 111);
+  height: 48px;
+  width: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: inline-block;  /* HElP!!!!!!!!!!!!!
+  ¿¿¿¿qué diferencia hay entre INLINE e INLINE-BLOCK?????????? */
+  margin-right: 20px;
+}
+#header-text{
+  display: inline-block;
+  padding: auto 0;  /* HElP!!!!!!!!!!!!!
+  ¿¿¿¿pq no consigo centrar verticalmente este DIV????? */
+}
+#header-text a:hover{
+  color: white;
+}
+.header-right #search-icon{
+  height: 20px;
+  width: 20px;
+  margin: 14px;
+}
+.header-right #bear-icon{
+  height: 50px;
+  margin-left: 20px;
+}
+
+header .button{
+  background: orange;
+}
+
+
+/*-- SECTION 1 */
+#section1 {
+  background: rgb(39, 53, 71);
+  color: white;
+  padding: 50px 50px;
+}
+
+.container-text li{
+  line-height: 40px;
+}
+#section1 .container-text .button{
+  background: rgb(203, 56, 55);
+}
+
+/*-- SECTION 2 */
+#section2 {
+  color: white;
+  padding: 50px 50px;
+  height: 30%;
+  min-height: 300px;
+  background-image: url(https://www.npmjs.com/static/images/npm-is-BOXES.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+#section2 .container-text .button{
+  background: rgb(49, 68, 88);
+}
+
+
+/*-- SECTION 3 */
+#section3 {
+  color: rgb(83, 88, 98);
+  padding: 50px 50px;
+  height: 30%;
+  min-height: 300px;
+  text-align: center;
+}
+#section3 p{
+  color: rgb(135, 145, 156);
+}
+#section3 a{
+  color: rgb(208, 74, 73);
+}
+.rounded-logo {
+    float: left;
+    width: 33%;
+  min-width: 200px;    /*-- HElP!!!!!!!!!!!!!
+  con este ancho mínimo evito que se me solapen si reduzco mucho la pantalla, pero ya no quedan centrados y además no se descualgan los tres iconos como en la web original, sino que primeron quedan 2 y luego ya los 3 en columna ¿¿¿¿cómo habría que hacer????? */
+}
+.rounded-logo-text{
+  padding: 0 30px ; }  /*-- HElP!!!!!!!!!!!!!
+¿¿¿¿pq he tenido que meter este div en el texto y no funcionaba con padding directamente que se me descuadraba????? */
